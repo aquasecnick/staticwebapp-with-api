@@ -6,10 +6,6 @@
         "allowedRoles": ["anonymous"] 
       },
       {
-        "route": "/login",
-        "redirect": "/.auth/login/aadb2c"
-      },        
-      {
         "route": "/profile*",
         "allowedRoles": ["authenticated"]
       },
@@ -68,7 +64,7 @@
         "rewrite": "/invalid-invitation-error.html"
       },
       "401": {
-        "redirect": "/login",
+        "redirect": "/.auth/login/aadb2c",
         "statusCode": 302
       },
       "403": {
