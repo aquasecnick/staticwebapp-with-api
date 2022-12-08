@@ -2,6 +2,10 @@
     "trailingSlash": "auto",
     "routes": [
       {
+        "route": "/login",
+        "rewrite": "/.auth/login/aadb2c"
+      },        
+      {
         "route": "/profile*",
         "allowedRoles": ["authenticated"]
       },
@@ -35,7 +39,7 @@
       },
       {
         "route": "/login",
-        "rewrite": "/.auth/login/aadb2c"
+        "rewrite": "/.auth/login/github"
       },
       {
         "route": "/.auth/login/twitter",
