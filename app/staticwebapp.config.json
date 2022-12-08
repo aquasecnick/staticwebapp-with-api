@@ -2,6 +2,10 @@
     "trailingSlash": "auto",
     "routes": [
       {
+        "route": "/.auth/login/aadb2c",
+        "allowedRoles": ["anonymous"] 
+      },        
+      {
         "route": "/login",
         "rewrite": "/.auth/login/aadb2c"
       },        
